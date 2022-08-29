@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14ADF27428BC6703008F9F39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADF27328BC6703008F9F39 /* main.m */; };
+		14ADF27C28BC6732008F9F39 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ADF27B28BC6732008F9F39 /* TestFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		14ADF27028BC6703008F9F39 /* TestFrameworkTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestFrameworkTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ADF27328BC6703008F9F39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14ADF27B28BC6732008F9F39 /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestFramework.framework; path = ../../../Library/Frameworks/TestFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ADF27C28BC6732008F9F39 /* TestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				14ADF27228BC6703008F9F39 /* TestFrameworkTool */,
 				14ADF27128BC6703008F9F39 /* Products */,
+				14ADF27A28BC6732008F9F39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				14ADF27328BC6703008F9F39 /* main.m */,
 			);
 			path = TestFrameworkTool;
+			sourceTree = "<group>";
+		};
+		14ADF27A28BC6732008F9F39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14ADF27B28BC6732008F9F39 /* TestFramework.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +253,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 768T4SN737;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +267,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 768T4SN737;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
